@@ -25,12 +25,6 @@ boxplot(data_matrix, "labels", ["New Shoe" "Benchmark 01" "Benchmark 02"])
 hold on
 plot(mean(data_matrix), "dg")
 
-% One-way ANOVA
-[P,ANOVATAB,STATS] = anova1(data_matrix)
-
-% Tukey post-hoc analysis
-[COMPARISON,MEANS,H,GNAMES] = multcompare(STATS)
-
 %% Inferential Analysis
 % One-way ANOVA
 [P,ANOVATAB,STATS] = anova1(data_matrix)
